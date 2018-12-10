@@ -1,0 +1,3685 @@
+{
+ "request": {
+  "airport": {
+   "requestedCode": "DEN",
+   "fsCode": "DEN"
+  },
+  "codeType": {},
+  "departing": true,
+  "date": {
+   "year": "2018",
+   "month": "12",
+   "day": "10",
+   "interpreted": "2018-12-10"
+  },
+  "hourOfDay": {
+   "requested": "8",
+   "interpreted": 8
+  },
+  "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/from/DEN/departing/2018/12/10/8"
+ },
+ "scheduledFlights": [
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "4671",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ABQ",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T09:51:00.000",
+   "flightEquipmentIataCode": "ER4",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "4048",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 514400
+    }
+   ],
+   "wetleaseOperatorFsCode": "AX",
+   "referenceCode": "704-3720398--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "4048",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ABQ",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T09:51:00.000",
+   "flightEquipmentIataCode": "ER4",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "4671",
+    "serviceType": "J",
+    "serviceClasses": [
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "AX",
+   "referenceCode": "704-3720398--514400"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1454",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ABQ",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T09:40:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4226909--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "5468",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "BIL",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:04:00.000",
+   "arrivalTime": "2018-12-10T09:49:00.000",
+   "flightEquipmentIataCode": "CRJ",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "3979",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 514645
+    }
+   ],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3720974--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "3979",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "BIL",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:04:00.000",
+   "arrivalTime": "2018-12-10T09:49:00.000",
+   "flightEquipmentIataCode": "CRJ",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "5468",
+    "serviceType": "J",
+    "serviceClasses": [
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3720974--514645"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "5306",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "BOI",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:10:00.000",
+   "arrivalTime": "2018-12-10T10:26:00.000",
+   "flightEquipmentIataCode": "CRJ",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "4060",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 514730
+    }
+   ],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3721263--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "4060",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "BOI",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:10:00.000",
+   "arrivalTime": "2018-12-10T10:26:00.000",
+   "flightEquipmentIataCode": "CRJ",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "5306",
+    "serviceType": "J",
+    "serviceClasses": [
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3721263--514730"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "3580",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "BWI",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:50:00.000",
+   "arrivalTime": "2018-12-10T14:05:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4229010--"
+  },
+  {
+   "carrierFsCode": "BAI",
+   "flightNumber": "772",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "CEZ",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T09:25:00.000",
+   "flightEquipmentIataCode": "PL2",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "UA",
+     "flightNumber": "2963",
+     "serviceType": "J",
+     "serviceClasses": [
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "F"
+     ],
+     "referenceCode": 3721893
+    }
+   ],
+   "referenceCode": "704-16436--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "2963",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "CEZ",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T09:25:00.000",
+   "flightEquipmentIataCode": "PL2",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "operator": {
+    "carrierFsCode": "BAI",
+    "flightNumber": "772",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-16436--3721893"
+  },
+  {
+   "carrierFsCode": "AA",
+   "flightNumber": "1910",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "CLT",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:12:00.000",
+   "arrivalTime": "2018-12-10T13:23:00.000",
+   "flightEquipmentIataCode": "321",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-299639--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "601",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "CUN",
+   "stops": 0,
+   "arrivalTerminal": "4",
+   "departureTime": "2018-12-10T08:10:00.000",
+   "arrivalTime": "2018-12-10T14:00:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4229702--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "269",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "DAL",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T11:20:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4229785--"
+  },
+  {
+   "carrierFsCode": "AA",
+   "flightNumber": "124",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "DFW",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:56:00.000",
+   "arrivalTime": "2018-12-10T11:50:00.000",
+   "flightEquipmentIataCode": "32B",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-299820--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "627",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "EWR",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T13:32:00.000",
+   "flightEquipmentIataCode": "752",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "SK",
+     "flightNumber": "6719",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 3350309
+    },
+    {
+     "carrierFsCode": "TP",
+     "flightNumber": "8471",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "O"
+     ],
+     "referenceCode": 3547761
+    }
+   ],
+   "referenceCode": "704-3724054--"
+  },
+  {
+   "carrierFsCode": "SK",
+   "flightNumber": "6719",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "EWR",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T13:32:00.000",
+   "flightEquipmentIataCode": "752",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "627",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3724054--3350309"
+  },
+  {
+   "carrierFsCode": "TP",
+   "flightNumber": "8471",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "EWR",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T13:32:00.000",
+   "flightEquipmentIataCode": "752",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "O"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "627",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3724054--3547761"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "2188",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "FLL",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T13:56:00.000",
+   "flightEquipmentIataCode": "739",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-3724318--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "277",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "FLL",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T14:10:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4230891--"
+  },
+  {
+   "carrierFsCode": "F9",
+   "flightNumber": "541",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "GEG",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:30:00.000",
+   "flightEquipmentIataCode": "319",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-1975521--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "156",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "GEG",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T09:50:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4231129--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1783",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "HOU",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T11:30:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4231671--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "939",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAD",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T13:27:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AV",
+     "flightNumber": "2040",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 986976
+    },
+    {
+     "carrierFsCode": "SN",
+     "flightNumber": "8810",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "O"
+     ],
+     "referenceCode": 3390040
+    }
+   ],
+   "referenceCode": "704-3725143--"
+  },
+  {
+   "carrierFsCode": "AV",
+   "flightNumber": "2040",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAD",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T13:27:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "939",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3725143--986976"
+  },
+  {
+   "carrierFsCode": "SN",
+   "flightNumber": "8810",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAD",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T13:27:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "O"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "939",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3725143--3390040"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "1103",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAH",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T11:39:00.000",
+   "flightEquipmentIataCode": "739",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "NZ",
+     "flightNumber": "6510",
+     "serviceType": "J",
+     "serviceClasses": [
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 2905716
+    },
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5048",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 10448160
+    }
+   ],
+   "referenceCode": "704-3725454--"
+  },
+  {
+   "carrierFsCode": "NZ",
+   "flightNumber": "6510",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAH",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T11:39:00.000",
+   "flightEquipmentIataCode": "739",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Q"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1103",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3725454--2905716"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5048",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "IAH",
+   "stops": 0,
+   "arrivalTerminal": "C",
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T11:39:00.000",
+   "flightEquipmentIataCode": "739",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1103",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3725454--10448160"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "707",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAS",
+   "stops": 0,
+   "arrivalTerminal": "3",
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T09:09:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5197",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 519291
+    }
+   ],
+   "referenceCode": "704-3726554--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5197",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAS",
+   "stops": 0,
+   "arrivalTerminal": "3",
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T09:09:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "707",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726554--519291"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "843",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAS",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:30:00.000",
+   "arrivalTime": "2018-12-10T09:30:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4232456--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "1093",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5705",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 519535
+    },
+    {
+     "carrierFsCode": "AV",
+     "flightNumber": "2045",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 987104
+    },
+    {
+     "carrierFsCode": "CA",
+     "flightNumber": "7226",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 1238073
+    },
+    {
+     "carrierFsCode": "NZ",
+     "flightNumber": "9490",
+     "serviceType": "J",
+     "serviceClasses": [
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 2905872
+    },
+    {
+     "carrierFsCode": "OZ",
+     "flightNumber": "6255",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 3036938
+    }
+   ],
+   "referenceCode": "704-3726982--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5705",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1093",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726982--519535"
+  },
+  {
+   "carrierFsCode": "AV",
+   "flightNumber": "2045",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1093",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726982--987104"
+  },
+  {
+   "carrierFsCode": "CA",
+   "flightNumber": "7226",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1093",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726982--1238073"
+  },
+  {
+   "carrierFsCode": "NZ",
+   "flightNumber": "9490",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Q"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1093",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726982--2905872"
+  },
+  {
+   "carrierFsCode": "OZ",
+   "flightNumber": "6255",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "7",
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T09:29:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Q"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1093",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3726982--3036938"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1352",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "LAX",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T10:05:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4233119--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "740",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "MSY",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T11:30:00.000",
+   "flightEquipmentIataCode": "319",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5080",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 519868
+    }
+   ],
+   "referenceCode": "704-3728566--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5080",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "MSY",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:03:00.000",
+   "arrivalTime": "2018-12-10T11:30:00.000",
+   "flightEquipmentIataCode": "319",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "740",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3728566--519868"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "4695",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "OAK",
+   "stops": 0,
+   "arrivalTerminal": "2",
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T10:05:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4236244--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1168",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ONT",
+   "stops": 0,
+   "arrivalTerminal": "4",
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T09:40:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4237028--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "682",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ORD",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:00:00.000",
+   "arrivalTime": "2018-12-10T11:22:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "EI",
+     "flightNumber": "6054",
+     "serviceType": "J",
+     "serviceClasses": [
+      "R",
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Q"
+     ],
+     "referenceCode": 10453846
+    },
+    {
+     "carrierFsCode": "CM",
+     "flightNumber": "2743",
+     "serviceType": "J",
+     "serviceClasses": [
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "O"
+     ],
+     "referenceCode": 10453849
+    },
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5770",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 10453852
+    }
+   ],
+   "referenceCode": "704-3729130--"
+  },
+  {
+   "carrierFsCode": "EI",
+   "flightNumber": "6054",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ORD",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:00:00.000",
+   "arrivalTime": "2018-12-10T11:22:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Q"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "682",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3729130--10453846"
+  },
+  {
+   "carrierFsCode": "CM",
+   "flightNumber": "2743",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ORD",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:00:00.000",
+   "arrivalTime": "2018-12-10T11:22:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "O"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "682",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3729130--10453849"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5770",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "ORD",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:00:00.000",
+   "arrivalTime": "2018-12-10T11:22:00.000",
+   "flightEquipmentIataCode": "753",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "682",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3729130--10453852"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "598",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "PDX",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:08:00.000",
+   "arrivalTime": "2018-12-10T09:53:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-3730432--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1661",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "PDX",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T10:15:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4237353--"
+  },
+  {
+   "carrierFsCode": "F9",
+   "flightNumber": "759",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "PHX",
+   "stops": 0,
+   "arrivalTerminal": "3",
+   "departureTime": "2018-12-10T08:50:00.000",
+   "arrivalTime": "2018-12-10T10:48:00.000",
+   "flightEquipmentIataCode": "319",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-1976252--"
+  },
+  {
+   "carrierFsCode": "F9",
+   "flightNumber": "2069",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "PSP",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:22:00.000",
+   "arrivalTime": "2018-12-10T09:45:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-1976307--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "2397",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "RNO",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T09:55:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4238707--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "1971",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "RSW",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T13:50:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-3731504--"
+  },
+  {
+   "carrierFsCode": "F9",
+   "flightNumber": "555",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SAN",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:00:00.000",
+   "arrivalTime": "2018-12-10T09:24:00.000",
+   "flightEquipmentIataCode": "321",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-1976416--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "1982",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SAN",
+   "stops": 0,
+   "arrivalTerminal": "2",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T09:43:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5406",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 520877
+    }
+   ],
+   "referenceCode": "704-3731554--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5406",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SAN",
+   "stops": 0,
+   "arrivalTerminal": "2",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T09:43:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "1982",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3731554--520877"
+  },
+  {
+   "carrierFsCode": "F9",
+   "flightNumber": "830",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SAV",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T13:38:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "referenceCode": "704-1976451--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "5300",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SEA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T10:13:00.000",
+   "flightEquipmentIataCode": "E7W",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "NH",
+     "flightNumber": "7375",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "D"
+     ],
+     "referenceCode": 2873460
+    }
+   ],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3732150--"
+  },
+  {
+   "carrierFsCode": "NH",
+   "flightNumber": "7375",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SEA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T10:13:00.000",
+   "flightEquipmentIataCode": "E7W",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "D"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "5300",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3732150--2873460"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1057",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SEA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T10:25:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4239854--"
+  },
+  {
+   "carrierFsCode": "AS",
+   "flightNumber": "749",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SEA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:45:00.000",
+   "arrivalTime": "2018-12-10T11:00:00.000",
+   "flightEquipmentIataCode": "73J",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "EK",
+     "flightNumber": "3022",
+     "serviceType": "J",
+     "serviceClasses": [
+      "R",
+      "F",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "Y"
+     ],
+     "referenceCode": 10457530
+    }
+   ],
+   "referenceCode": "704-930181--"
+  },
+  {
+   "carrierFsCode": "EK",
+   "flightNumber": "3022",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SEA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:45:00.000",
+   "arrivalTime": "2018-12-10T11:00:00.000",
+   "flightEquipmentIataCode": "73J",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "Y"
+   ],
+   "operator": {
+    "carrierFsCode": "AS",
+    "flightNumber": "749",
+    "serviceType": "J",
+    "serviceClasses": [
+     "R",
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-930181--10457530"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "2272",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SFO",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T10:20:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4239961--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "4547",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SJC",
+   "stops": 0,
+   "arrivalTerminal": "A",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T10:14:00.000",
+   "flightEquipmentIataCode": "CR7",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "4075",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 521346
+    }
+   ],
+   "wetleaseOperatorFsCode": "G7",
+   "referenceCode": "704-3733210--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "4075",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SJC",
+   "stops": 0,
+   "arrivalTerminal": "A",
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T10:14:00.000",
+   "flightEquipmentIataCode": "CR7",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "4547",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "G7",
+   "referenceCode": "704-3733210--521346"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "762",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SJC",
+   "stops": 0,
+   "arrivalTerminal": "B",
+   "departureTime": "2018-12-10T08:35:00.000",
+   "arrivalTime": "2018-12-10T10:25:00.000",
+   "flightEquipmentIataCode": "73H",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4240239--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "720",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SJD",
+   "stops": 0,
+   "arrivalTerminal": "2",
+   "departureTime": "2018-12-10T08:30:00.000",
+   "arrivalTime": "2018-12-10T11:40:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4240520--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1553",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SLC",
+   "stops": 0,
+   "arrivalTerminal": "1",
+   "departureTime": "2018-12-10T08:50:00.000",
+   "arrivalTime": "2018-12-10T10:25:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4240681--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "5526",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SMF",
+   "stops": 0,
+   "arrivalTerminal": "A",
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T10:05:00.000",
+   "flightEquipmentIataCode": "E7W",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "4311",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 521638
+    }
+   ],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3733645--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "4311",
+   "brand": "United Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SMF",
+   "stops": 0,
+   "arrivalTerminal": "A",
+   "departureTime": "2018-12-10T08:05:00.000",
+   "arrivalTime": "2018-12-10T10:05:00.000",
+   "flightEquipmentIataCode": "E7W",
+   "isCodeshare": true,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "5526",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "OO",
+   "referenceCode": "704-3733645--521638"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1807",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SMF",
+   "stops": 0,
+   "arrivalTerminal": "B",
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T10:05:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4241108--"
+  },
+  {
+   "carrierFsCode": "UA",
+   "flightNumber": "265",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SNA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:11:00.000",
+   "arrivalTime": "2018-12-10T09:32:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [
+    {
+     "carrierFsCode": "AC",
+     "flightNumber": "5491",
+     "serviceType": "J",
+     "serviceClasses": [
+      "F",
+      "J",
+      "Y"
+     ],
+     "trafficRestrictions": [
+      "G"
+     ],
+     "referenceCode": 521709
+    }
+   ],
+   "referenceCode": "704-3733734--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "5491",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SNA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:11:00.000",
+   "arrivalTime": "2018-12-10T09:32:00.000",
+   "flightEquipmentIataCode": "320",
+   "isCodeshare": true,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "G"
+   ],
+   "operator": {
+    "carrierFsCode": "UA",
+    "flightNumber": "265",
+    "serviceType": "J",
+    "serviceClasses": [
+     "F",
+     "J",
+     "Y"
+    ],
+    "trafficRestrictions": []
+   },
+   "codeshares": [],
+   "referenceCode": "704-3733734--521709"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "130",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "SNA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:15:00.000",
+   "arrivalTime": "2018-12-10T09:45:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4241406--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "2298",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "TPA",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:20:00.000",
+   "arrivalTime": "2018-12-10T13:40:00.000",
+   "flightEquipmentIataCode": "738",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4241978--"
+  },
+  {
+   "carrierFsCode": "WN",
+   "flightNumber": "1899",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "TUS",
+   "stops": 0,
+   "departureTime": "2018-12-10T08:25:00.000",
+   "arrivalTime": "2018-12-10T10:25:00.000",
+   "flightEquipmentIataCode": "73W",
+   "isCodeshare": false,
+   "isWetlease": false,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [
+    "F"
+   ],
+   "codeshares": [],
+   "referenceCode": "704-4242329--"
+  },
+  {
+   "carrierFsCode": "AC",
+   "flightNumber": "8109",
+   "brand": "Air Canada Express",
+   "departureAirportFsCode": "DEN",
+   "arrivalAirportFsCode": "YVR",
+   "stops": 0,
+   "arrivalTerminal": "M",
+   "departureTime": "2018-12-10T08:10:00.000",
+   "arrivalTime": "2018-12-10T10:22:00.000",
+   "flightEquipmentIataCode": "CR9",
+   "isCodeshare": false,
+   "isWetlease": true,
+   "serviceType": "J",
+   "serviceClasses": [
+    "R",
+    "F",
+    "J",
+    "Y"
+   ],
+   "trafficRestrictions": [],
+   "codeshares": [],
+   "wetleaseOperatorFsCode": "QK",
+   "referenceCode": "704-522051--"
+  }
+ ],
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "OO",
+    "iata": "OO",
+    "icao": "SKW",
+    "name": "SkyWest Airlines",
+    "active": true
+   },
+   {
+    "fs": "AA",
+    "iata": "AA",
+    "icao": "AAL",
+    "name": "American Airlines",
+    "phoneNumber": "08457-567-567",
+    "active": true
+   },
+   {
+    "fs": "AC",
+    "iata": "AC",
+    "icao": "ACA",
+    "name": "Air Canada",
+    "phoneNumber": "1-888-422-7533",
+    "active": true
+   },
+   {
+    "fs": "EI",
+    "iata": "EI",
+    "icao": "EIN",
+    "name": "Aer Lingus",
+    "phoneNumber": "1-800-IRISHAIR",
+    "active": true
+   },
+   {
+    "fs": "EK",
+    "iata": "EK",
+    "icao": "UAE",
+    "name": "Emirates",
+    "phoneNumber": "800 777 3999",
+    "active": true
+   },
+   {
+    "fs": "BAI",
+    "iata": "4B",
+    "icao": "BTQ",
+    "name": "Boutique Air",
+    "active": true
+   },
+   {
+    "fs": "CM",
+    "iata": "CM",
+    "icao": "CMP",
+    "name": "Copa Airlines",
+    "active": true
+   },
+   {
+    "fs": "OZ",
+    "iata": "OZ",
+    "icao": "AAR",
+    "name": "Asiana Airlines",
+    "phoneNumber": "1-800-227-4262",
+    "active": true
+   },
+   {
+    "fs": "UA",
+    "iata": "UA",
+    "icao": "UAL",
+    "name": "United Airlines",
+    "phoneNumber": "1-800-864-8331",
+    "active": true
+   },
+   {
+    "fs": "NZ",
+    "iata": "NZ",
+    "icao": "ANZ",
+    "name": "Air New Zealand",
+    "phoneNumber": "1-800-262-1234",
+    "active": true
+   },
+   {
+    "fs": "G7",
+    "iata": "G7",
+    "icao": "GJS",
+    "name": "GoJet Airlines",
+    "active": true
+   },
+   {
+    "fs": "AS",
+    "iata": "AS",
+    "icao": "ASA",
+    "name": "Alaska Airlines",
+    "phoneNumber": "1-800-252-7522",
+    "active": true
+   },
+   {
+    "fs": "F9",
+    "iata": "F9",
+    "icao": "FFT",
+    "name": "Frontier Airlines",
+    "phoneNumber": "1-800-432-1359",
+    "active": true
+   },
+   {
+    "fs": "AV",
+    "iata": "AV",
+    "icao": "AVA",
+    "name": "AVIANCA",
+    "phoneNumber": "01-8000-1234 34",
+    "active": true
+   },
+   {
+    "fs": "AX",
+    "iata": "AX",
+    "icao": "LOF",
+    "name": "Trans States Airlines",
+    "active": true
+   },
+   {
+    "fs": "WN",
+    "iata": "WN",
+    "icao": "SWA",
+    "name": "Southwest Airlines",
+    "phoneNumber": "1-800-435-9792",
+    "active": true
+   },
+   {
+    "fs": "SK",
+    "iata": "SK",
+    "icao": "SAS",
+    "name": "SAS",
+    "phoneNumber": "+1 800-221 2350",
+    "active": true
+   },
+   {
+    "fs": "NH",
+    "iata": "NH",
+    "icao": "ANA",
+    "name": "ANA",
+    "phoneNumber": "1-800-235-9262",
+    "active": true
+   },
+   {
+    "fs": "QK",
+    "iata": "QK",
+    "icao": "JZA",
+    "name": "Jazz",
+    "active": true
+   },
+   {
+    "fs": "SN",
+    "iata": "SN",
+    "icao": "BEL",
+    "name": "Brussels Airlines",
+    "phoneNumber": "1 516 740 5200",
+    "active": true
+   },
+   {
+    "fs": "TP",
+    "iata": "TP",
+    "icao": "TAP",
+    "name": "TAP Portugal",
+    "phoneNumber": "800 221-7370",
+    "active": true
+   },
+   {
+    "fs": "CA",
+    "iata": "CA",
+    "icao": "CCA",
+    "name": "Air China",
+    "phoneNumber": "1-800-986-1985",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "ORD",
+    "iata": "ORD",
+    "icao": "KORD",
+    "faa": "ORD",
+    "name": "O'Hare International Airport",
+    "street1": "10000 West O'Hare",
+    "city": "Chicago",
+    "cityCode": "CHI",
+    "stateCode": "IL",
+    "postalCode": "60666",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "ILZ014",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 41.976912,
+    "longitude": -87.904876,
+    "elevationFeet": 668,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SAN",
+    "iata": "SAN",
+    "icao": "KSAN",
+    "faa": "SAN",
+    "name": "San Diego International Airport",
+    "street1": "Airport Drive",
+    "street2": "",
+    "city": "San Diego",
+    "cityCode": "SAN",
+    "stateCode": "CA",
+    "postalCode": "92101",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ043",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 32.731938,
+    "longitude": -117.197312,
+    "elevationFeet": 14,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "LAX",
+    "iata": "LAX",
+    "icao": "KLAX",
+    "faa": "LAX",
+    "name": "Los Angeles International Airport",
+    "street1": "One World Way",
+    "street2": "",
+    "city": "Los Angeles",
+    "cityCode": "LAX",
+    "stateCode": "CA",
+    "postalCode": "90045-5803",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ041",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 33.943399,
+    "longitude": -118.408279,
+    "elevationFeet": 126,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "TPA",
+    "iata": "TPA",
+    "icao": "KTPA",
+    "faa": "TPA",
+    "name": "Tampa International Airport",
+    "street1": "5507 West Spruce Street",
+    "city": "Tampa",
+    "cityCode": "TPA",
+    "stateCode": "FL",
+    "postalCode": "33607",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "FLZ251",
+    "localTime": "2018-12-10T17:06:24.458",
+    "utcOffsetHours": -5,
+    "latitude": 27.979869,
+    "longitude": -82.535415,
+    "elevationFeet": 26,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "FLL",
+    "iata": "FLL",
+    "icao": "KFLL",
+    "faa": "FLL",
+    "name": "Fort Lauderdale-Hollywood International Airport",
+    "street1": "320 Terminal Drive",
+    "city": "Fort Lauderdale",
+    "cityCode": "FLL",
+    "stateCode": "FL",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "FLZ072",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 26.071492,
+    "longitude": -80.144908,
+    "elevationFeet": 9,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SNA",
+    "iata": "SNA",
+    "icao": "KSNA",
+    "faa": "SNA",
+    "name": "John Wayne Airport",
+    "street1": "18601 Airport Way",
+    "street2": "",
+    "city": "Santa Ana",
+    "cityCode": "SNA",
+    "stateCode": "CA",
+    "postalCode": "92707",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ042",
+    "localTime": "2018-12-10T14:06:24.458",
+    "utcOffsetHours": -8,
+    "latitude": 33.680201,
+    "longitude": -117.860538,
+    "elevationFeet": 54,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "SAV",
+    "iata": "SAV",
+    "icao": "KSAV",
+    "faa": "SAV",
+    "name": "Savannah/Hilton Head Airport",
+    "street1": "400 Airways Avenue",
+    "street2": "",
+    "city": "Savannah",
+    "cityCode": "SAV",
+    "stateCode": "GA",
+    "postalCode": "31408",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "GAZ118",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 32.1358,
+    "longitude": -81.210588,
+    "elevationFeet": 50,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "CLT",
+    "iata": "CLT",
+    "icao": "KCLT",
+    "faa": "CLT",
+    "name": "Charlotte Douglas International Airport",
+    "street1": "5501 Josh Birmingham Parkway",
+    "city": "Charlotte",
+    "cityCode": "CLT",
+    "stateCode": "NC",
+    "postalCode": "28204",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "NCZ071",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 35.219167,
+    "longitude": -80.935833,
+    "elevationFeet": 748,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SLC",
+    "iata": "SLC",
+    "icao": "KSLC",
+    "faa": "SLC",
+    "name": "Salt Lake City International Airport",
+    "street1": "776 North Terminal Drive",
+    "street2": "",
+    "city": "Salt Lake City",
+    "cityCode": "SLC",
+    "stateCode": "UT",
+    "postalCode": "84116",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "UTZ003",
+    "localTime": "2018-12-10T15:06:24.458",
+    "utcOffsetHours": -7,
+    "latitude": 40.785645,
+    "longitude": -111.980673,
+    "elevationFeet": 4227,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SJD",
+    "iata": "SJD",
+    "icao": "MMSD",
+    "name": "Los Cabos International Airport",
+    "city": "San Jose Cabo",
+    "cityCode": "SJD",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Mazatlan",
+    "localTime": "2018-12-10T15:06:24.458",
+    "utcOffsetHours": -7,
+    "latitude": 23.162354,
+    "longitude": -109.717283,
+    "elevationFeet": 358,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "SJC",
+    "iata": "SJC",
+    "icao": "KSJC",
+    "faa": "SJC",
+    "name": "Norman Y. Mineta San Jose International Airport",
+    "street1": "1701 Airport Boulevard, Suite B-1130",
+    "city": "San Jose",
+    "cityCode": "SJC",
+    "stateCode": "CA",
+    "postalCode": "95110",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ513",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 37.366736,
+    "longitude": -121.926375,
+    "elevationFeet": 58,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "ABQ",
+    "iata": "ABQ",
+    "icao": "KABQ",
+    "faa": "ABQ",
+    "name": "Albuquerque International Sunport",
+    "street1": "2200 Sunport Blvd. SE",
+    "city": "Albuquerque",
+    "cityCode": "ABQ",
+    "stateCode": "NM",
+    "postalCode": "87106",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "NMZ519",
+    "localTime": "2018-12-10T15:06:24.457",
+    "utcOffsetHours": -7,
+    "latitude": 35.049625,
+    "longitude": -106.617193,
+    "elevationFeet": 5355,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "RNO",
+    "iata": "RNO",
+    "icao": "KRNO",
+    "faa": "RNO",
+    "name": "Reno/Tahoe International Airport",
+    "street1": "2001 East Plumb Lane",
+    "city": "Reno",
+    "cityCode": "RNO",
+    "stateCode": "NV",
+    "postalCode": "89502",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "NVZ003",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 39.505782,
+    "longitude": -119.775698,
+    "elevationFeet": 4412,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "DFW",
+    "iata": "DFW",
+    "icao": "KDFW",
+    "faa": "DFW",
+    "name": "Dallas/Fort Worth International Airport",
+    "street1": "International Pkwy",
+    "city": "Dallas",
+    "cityCode": "DFW",
+    "stateCode": "TX",
+    "postalCode": "75261",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "TXZ119",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 32.897462,
+    "longitude": -97.036128,
+    "elevationFeet": 603,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "ONT",
+    "iata": "ONT",
+    "icao": "KONT",
+    "faa": "ONT",
+    "name": "Ontario International Airport",
+    "street1": "2900 E. Airport Drive",
+    "city": "Ontario",
+    "cityCode": "ONT",
+    "stateCode": "CA",
+    "postalCode": "91761",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ048",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 34.056001,
+    "longitude": -117.601193,
+    "elevationFeet": 922,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "YVR",
+    "iata": "YVR",
+    "icao": "CYVR",
+    "name": "Vancouver International Airport",
+    "street1": "",
+    "street2": "",
+    "city": "Vancouver",
+    "cityCode": "YVR",
+    "stateCode": "BC",
+    "postalCode": "V7B 1Y7",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Vancouver",
+    "localTime": "2018-12-10T14:06:24.458",
+    "utcOffsetHours": -8,
+    "latitude": 49.194697,
+    "longitude": -123.179191,
+    "elevationFeet": 14,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "BWI",
+    "iata": "BWI",
+    "icao": "KBWI",
+    "faa": "BWI",
+    "name": "Baltimore/Wash International Thurgood Marshall Airport",
+    "city": "Baltimore",
+    "cityCode": "BWI",
+    "stateCode": "MD",
+    "postalCode": "21240",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "MDZ014",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 39.179526,
+    "longitude": -76.668941,
+    "elevationFeet": 146,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "BOI",
+    "iata": "BOI",
+    "icao": "KBOI",
+    "faa": "BOI",
+    "name": "Boise Air Terminal (Gowen Field)",
+    "street1": "3201 Airport Way",
+    "city": "Boise",
+    "cityCode": "BOI",
+    "stateCode": "ID",
+    "postalCode": "83705",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "IDZ014",
+    "localTime": "2018-12-10T15:06:24.457",
+    "utcOffsetHours": -7,
+    "latitude": 43.569263,
+    "longitude": -116.221934,
+    "elevationFeet": 2868,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "CUN",
+    "iata": "CUN",
+    "icao": "MMUN",
+    "name": "Cancun International Airport",
+    "city": "Cancun",
+    "cityCode": "CUN",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Cancun",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 21.040457,
+    "longitude": -86.874439,
+    "elevationFeet": 23,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "SFO",
+    "iata": "SFO",
+    "icao": "KSFO",
+    "faa": "SFO",
+    "name": "San Francisco International Airport",
+    "city": "San Francisco",
+    "cityCode": "SFO",
+    "stateCode": "CA",
+    "postalCode": "94128",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ508",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 37.615215,
+    "longitude": -122.389881,
+    "elevationFeet": 11,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "EWR",
+    "iata": "EWR",
+    "icao": "KEWR",
+    "faa": "EWR",
+    "name": "Newark Liberty International Airport",
+    "street1": "Building 1, Conrad Road",
+    "street2": "",
+    "city": "Newark",
+    "cityCode": "EWR",
+    "stateCode": "NJ",
+    "postalCode": "07114",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "NJZ006",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 40.689071,
+    "longitude": -74.178753,
+    "elevationFeet": 18,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "PHX",
+    "iata": "PHX",
+    "icao": "KPHX",
+    "faa": "PHX",
+    "name": "Phoenix Sky Harbor International Airport",
+    "street1": "3400 Sky Harbor Boulevard",
+    "city": "Phoenix",
+    "cityCode": "PHX",
+    "stateCode": "AZ",
+    "postalCode": "85034",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Phoenix",
+    "weatherZone": "AZZ023",
+    "localTime": "2018-12-10T15:06:24.457",
+    "utcOffsetHours": -7,
+    "latitude": 33.435036,
+    "longitude": -112.000164,
+    "elevationFeet": 1135,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "BIL",
+    "iata": "BIL",
+    "icao": "KBIL",
+    "faa": "BIL",
+    "name": "Billings Logan International Airport",
+    "street1": "1901 Terminal Circle, Room 216",
+    "city": "Billings",
+    "cityCode": "BIL",
+    "stateCode": "MT",
+    "postalCode": "59105",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "MTZ035",
+    "localTime": "2018-12-10T15:06:24.457",
+    "utcOffsetHours": -7,
+    "latitude": 45.803419,
+    "longitude": -108.537229,
+    "elevationFeet": 3649,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "PDX",
+    "iata": "PDX",
+    "icao": "KPDX",
+    "faa": "PDX",
+    "name": "Portland International Airport",
+    "street1": "7000 NE Airport Way",
+    "city": "Portland",
+    "cityCode": "PDX",
+    "stateCode": "OR",
+    "postalCode": "97218",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "ORZ006",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 45.588995,
+    "longitude": -122.592901,
+    "elevationFeet": 30,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "GEG",
+    "iata": "GEG",
+    "icao": "KGEG",
+    "faa": "GEG",
+    "name": "Spokane International Airport",
+    "street1": "9000 West Airport Drive",
+    "street2": "",
+    "city": "Spokane",
+    "cityCode": "GEG",
+    "stateCode": "WA",
+    "postalCode": "99224",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "WAZ036",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 47.625147,
+    "longitude": -117.537638,
+    "elevationFeet": 2372,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "DEN",
+    "iata": "DEN",
+    "icao": "KDEN",
+    "faa": "DEN",
+    "name": "Denver International Airport",
+    "street1": "8500 Pena Boulevard",
+    "city": "Denver",
+    "cityCode": "DEN",
+    "stateCode": "CO",
+    "postalCode": "80249-6340",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "COZ040",
+    "localTime": "2018-12-10T15:06:24.443",
+    "utcOffsetHours": -7,
+    "latitude": 39.851382,
+    "longitude": -104.673098,
+    "elevationFeet": 5389,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "PSP",
+    "iata": "PSP",
+    "icao": "KPSP",
+    "faa": "PSP",
+    "name": "Palm Springs International Airport",
+    "street1": "3400 East Tahquitz-Canyon Way",
+    "city": "Palm Springs",
+    "cityCode": "PSP",
+    "stateCode": "CA",
+    "postalCode": "92262",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ061",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 33.822976,
+    "longitude": -116.508444,
+    "elevationFeet": 474,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "IAD",
+    "iata": "IAD",
+    "icao": "KIAD",
+    "faa": "IAD",
+    "name": "Washington Dulles International Airport",
+    "street1": "1 Saarinen Circle",
+    "city": "Dulles",
+    "cityCode": "WAS",
+    "stateCode": "VA",
+    "postalCode": "20166",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "DCZ001",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 38.95315,
+    "longitude": -77.447735,
+    "elevationFeet": 313,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SMF",
+    "iata": "SMF",
+    "icao": "KSMF",
+    "faa": "SMF",
+    "name": "Sacramento International Airport",
+    "street1": "6900 Airport Boulevard",
+    "street2": "",
+    "city": "Sacramento",
+    "cityCode": "SAC",
+    "stateCode": "CA",
+    "postalCode": "95837",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ017",
+    "localTime": "2018-12-10T14:06:24.458",
+    "utcOffsetHours": -8,
+    "latitude": 38.692283,
+    "longitude": -121.593695,
+    "elevationFeet": 28,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "DAL",
+    "iata": "DAL",
+    "icao": "KDAL",
+    "faa": "DAL",
+    "name": "Dallas Love Field",
+    "street1": "8008 Cedar Springs Road",
+    "city": "Dallas",
+    "cityCode": "DFW",
+    "stateCode": "TX",
+    "postalCode": "75235",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "TXZ119",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 32.843909,
+    "longitude": -96.850002,
+    "elevationFeet": 487,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "SEA",
+    "iata": "SEA",
+    "icao": "KSEA",
+    "faa": "SEA",
+    "name": "Seattle-Tacoma International Airport",
+    "city": "Seattle",
+    "cityCode": "SEA",
+    "stateCode": "WA",
+    "postalCode": "98158",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "WAZ001",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 47.443839,
+    "longitude": -122.301732,
+    "elevationFeet": 429,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "HOU",
+    "iata": "HOU",
+    "icao": "KHOU",
+    "faa": "HOU",
+    "name": "William P. Hobby Airport",
+    "street1": "7800 Airport Boulevard",
+    "city": "Houston",
+    "cityCode": "HOU",
+    "stateCode": "TX",
+    "postalCode": "77061",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "TXZ213",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 29.654513,
+    "longitude": -95.277018,
+    "elevationFeet": 46,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "IAH",
+    "iata": "IAH",
+    "icao": "KIAH",
+    "faa": "IAH",
+    "name": "George Bush Intercontinental Airport",
+    "street1": "16930 JFK Boulevard",
+    "street2": "",
+    "city": "Houston",
+    "cityCode": "HOU",
+    "stateCode": "TX",
+    "postalCode": "77032",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "TXZ213",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 29.983333,
+    "longitude": -95.34,
+    "elevationFeet": 97,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "MSY",
+    "iata": "MSY",
+    "icao": "KMSY",
+    "faa": "MSY",
+    "name": "Louis Armstrong New Orleans International Airport",
+    "street1": "900 Airline Highway",
+    "city": "New Orleans",
+    "cityCode": "MSY",
+    "stateCode": "LA",
+    "postalCode": "70062",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "weatherZone": "LAZ061",
+    "localTime": "2018-12-10T16:06:24.457",
+    "utcOffsetHours": -6,
+    "latitude": 29.984564,
+    "longitude": -90.256391,
+    "elevationFeet": 4,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "TUS",
+    "iata": "TUS",
+    "icao": "KTUS",
+    "faa": "TUS",
+    "name": "Tucson International Airport",
+    "street1": "7005 South Plumer Ave.",
+    "street2": "",
+    "city": "Tucson",
+    "cityCode": "TUS",
+    "stateCode": "AZ",
+    "postalCode": "85706",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Phoenix",
+    "weatherZone": "AZZ033",
+    "localTime": "2018-12-10T15:06:24.458",
+    "utcOffsetHours": -7,
+    "latitude": 32.120688,
+    "longitude": -110.937369,
+    "elevationFeet": 2643,
+    "classification": 3,
+    "active": true
+   },
+   {
+    "fs": "RSW",
+    "iata": "RSW",
+    "icao": "KRSW",
+    "faa": "RSW",
+    "name": "Southwest Florida International Airport",
+    "street1": "11000 Terminal Access Road",
+    "city": "Fort Myers",
+    "cityCode": "FMY",
+    "stateCode": "FL",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "FLZ065",
+    "localTime": "2018-12-10T17:06:24.457",
+    "utcOffsetHours": -5,
+    "latitude": 26.527887,
+    "longitude": -81.755263,
+    "elevationFeet": 30,
+    "classification": 2,
+    "active": true
+   },
+   {
+    "fs": "OAK",
+    "iata": "OAK",
+    "icao": "KOAK",
+    "faa": "OAK",
+    "name": "Metropolitan Oakland International Airport",
+    "street1": "1 Airport Drive",
+    "city": "Oakland",
+    "cityCode": "OAK",
+    "stateCode": "CA",
+    "postalCode": "94621",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "CAZ508",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 37.71188,
+    "longitude": -122.212011,
+    "elevationFeet": 6,
+    "classification": 1,
+    "active": true
+   },
+   {
+    "fs": "CEZ",
+    "iata": "CEZ",
+    "icao": "KCEZ",
+    "faa": "CEZ",
+    "name": "Montezuma County Airport",
+    "city": "Cortez",
+    "cityCode": "CEZ",
+    "stateCode": "CO",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Denver",
+    "weatherZone": "COZ021",
+    "localTime": "2018-12-10T15:06:24.457",
+    "utcOffsetHours": -7,
+    "latitude": 37.302778,
+    "longitude": -108.627222,
+    "elevationFeet": 5918,
+    "classification": 4,
+    "active": true
+   },
+   {
+    "fs": "LAS",
+    "iata": "LAS",
+    "icao": "KLAS",
+    "faa": "LAS",
+    "name": "McCarran International Airport",
+    "street1": "5757 Wayne Newton Boulevard",
+    "city": "Las Vegas",
+    "cityCode": "LAS",
+    "stateCode": "NV",
+    "postalCode": "89119",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Los_Angeles",
+    "weatherZone": "NVZ020",
+    "localTime": "2018-12-10T14:06:24.457",
+    "utcOffsetHours": -8,
+    "latitude": 36.081,
+    "longitude": -115.147599,
+    "elevationFeet": 2095,
+    "classification": 1,
+    "active": true
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "32B",
+    "name": "Airbus A321 (sharklets)",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "E7W",
+    "name": "Embraer 175 (Enhanced Winglets)",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "ER4",
+    "name": "Embraer RJ145",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   },
+   {
+    "iata": "CR7",
+    "name": "Canadair (Bombardier) Regional Jet 700 and Challenger 870",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   },
+   {
+    "iata": "CR9",
+    "name": "Canadair (Bombardier) Regional Jet 900 and Challenger 890",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   },
+   {
+    "iata": "73H",
+    "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "73J",
+    "name": "Boeing 737-900 (winglets) Passenger/BBJ3",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "320",
+    "name": "Airbus A320",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "321",
+    "name": "Airbus A321",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "752",
+    "name": "Boeing 757-200 Passenger",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "753",
+    "name": "Boeing 757-300 Passenger",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "PL2",
+    "name": "Pilatus PC-12",
+    "turboProp": true,
+    "jet": false,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "CRJ",
+    "name": "Canadair (Bombardier) Regional Jet",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   },
+   {
+    "iata": "73W",
+    "name": "Boeing 737-700 (winglets) Passenger/BBJ1",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "319",
+    "name": "Airbus A319",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "738",
+    "name": "Boeing 737-800 Passenger",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   },
+   {
+    "iata": "739",
+    "name": "Boeing 737-900 Passenger",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   }
+  ]
+ }
+}
