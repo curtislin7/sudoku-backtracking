@@ -5,13 +5,18 @@ from collections import OrderedDict
 #all the runway times are going to be kept in order (i.e. the earlier planes are
 #before the later planes
 
+#TODO:In one of the edge cases discussed below, we need to add dates to each of 
+#these plane leave times. The dict will have values that contain the the time and
+#the dates. (e.g. ("PlaneOne",(1000, "12/01/05"))), find a way to compare dates
+#(i.e. RegEx), and fix the edge case
 planeLeaveTimes = OrderedDict([
-	("PlaneOne",1000), 
-	("PlaneTwo",1000), 
-	("PlaneThree", 1020), 
+	("PlaneOne", 1000), 
+	("PlaneTwo", 1000), 
+	("PlaneThree", 1000), 
 	("PlaneFour", 1030), 
 	("PlaneFive",1100)
 	])
+
     
 planes = ["PlaneOne", "PlaneTwo", "PlaneThree", "PlaneFour", "PlaneFive"]
 runways = ["One", "Two", "Three"]
@@ -39,9 +44,13 @@ def backtracking_search(csp):
     return recursive_backtracking(output, csp)
 
 #Edge cases to take care of:
-#if the time is past midnight, rest back to 0
 #if there are absolutely no options (i.e. no possible solutions
-#current )
+#current)
+
+#A pretty big problem: How do we track if a runway is free 
+#today at 0005 or tomorrow at 0005? We need dates with each plane and
+#when each runway is free
+
 def recursive_backtracking(assignment, csp):
 	if(len(assignment) == len(csp.variables)):
 		return assignment
@@ -51,10 +60,12 @@ def recursive_backtracking(assignment, csp):
 			current = plane
 
 	for runway in csp.domain:
-		isOK = True
-		if(csp.runwayCheck[runway] >= csp.planeLeaveTimes[current]):
-			isOK = False
-		if(isOK == True):
+
+		#Here, we are comparing when the runway time is free to the leave time of
+		#the plane (e.g. if the plane currently on a runway last left at 1205, and 
+		#the current plane leave time is past that, then the runway can be assigned
+		#to that plane)
+		if(csp.runwayCheck[runway] < csp.planeLeaveTimes[current]):
 			assignment[current] = runway
 			csp.runwayCheck[runway] = csp.planeLeaveTimes[current] + 5
 			result = recursive_backtracking(assignment, csp)
@@ -63,7 +74,7 @@ def recursive_backtracking(assignment, csp):
 			assignment.pop(current,None)
 		csp.count+=1
 	#if the current plane has no more options, delay the plane by 5 minutes
-	#by adding 5 to the plane leave time
+	#by adding 5 to the plane leave time.
 	return False
 
 
