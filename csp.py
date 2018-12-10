@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 from collections import OrderedDict
 
 
@@ -84,4 +82,3 @@ csp = CSP(planes, planeLeaveTimes, runways)
 a = backtracking_search(csp)
 print(csp.count)
 print(a)
->>>>>>> 2da8c69d8598eaed287cb341195ee0c97d82c0b8
