@@ -1,6 +1,7 @@
 import json
 from collections import OrderedDict
 from datetime import datetime as dt
+from operator import itemgetter
 
 def formatDate(date):
 	clean = dt.strptime(date, "%Y-%m-%dT%H:%M:%S.%f").strftime("%H:%M")
@@ -61,10 +62,10 @@ for flight in range(0, len(data3["scheduledFlights"])):
 
 
 flightDict = OrderedDict(flights)
+d = OrderedDict(sorted(flightDict.items(), key=itemgetter(1)))
 
 
-
-print(flightDict)
+#print(d)
 
 # with open('cleandata.txt', 'w') as file:
 #      file.write(json.dumps(flightDict))
