@@ -64,8 +64,8 @@ flightDict = OrderedDict(flights)
 
 
 
-#print(flightDict)
+print(flightDict)
 
-with open('cleandata.txt', 'w') as file:
-     file.write(json.dumps(flightDict))
-file.close()
+# with open('cleandata.txt', 'w') as file:
+#      file.write(json.dumps(flightDict))
+# file.close()
