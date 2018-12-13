@@ -9,7 +9,7 @@ class sudokuBoard:
 		self.board = board
 		if(board == None):
 			self.numberOfFilledPositions = 0
-			while(self.numberOfFilledPositions<17):
+			while(self.numberOfFilledPositions!=26):
 				self.numberOfFilledPositions = 0
 				self.board = [[0 for x in range(9)] for y in range(9)]
 				self.generateRandomBoard()
@@ -118,7 +118,6 @@ def backtracking_search(sudokuBoard):
     output = OrderedDict()
     return recursive_backtracking(output, sudokuBoard)
 
-
 def recursive_backtracking(assignment, sudokuBoard):
     #if all variables in sudokuBoard.openPositions have been assigned, end the recursion
     #and return.
@@ -158,10 +157,9 @@ def recursive_backtracking(assignment, sudokuBoard):
 
 def runTestsDisplay(numberOfTests):
 	for i in range(numberOfTests):
-		print("New Sudoku Test:", i)
+		print("New Sudoku Test:", i+1)
 		sudokuTest = sudokuBoard()
 		print("Number of clues given for randomly generated sudoku board:", sudokuTest.numberOfFilledPositions)
-		print("")
 		print("Randomly generated sudoku board:")
 		sudokuTest.displayBoard()
 		startTime = time.time()
@@ -175,6 +173,7 @@ def runTestsDisplay(numberOfTests):
 		sudokuTest.displayBoard()
 		print("Runtime of backtracking algorithm:", runTime)
 		print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+		print("")
 
 def displayBoardInformation(boardResults):
 	# print("Number of Clues Given     Sudoku Solved?     Algorithm Runtime:     Number of Backtracks:")
@@ -203,79 +202,138 @@ def runTests(numberOfTests):
 		# sudokuTest.displayBoard()
 		displayBoardInformation(boardInformation)
 
-#This function will run multiple tests with randomly generated boards. 
-#Fortunately, if the randomly generated board is too "hard", the algorithm
-#will keep running until it finds a solution, or fails. For this reason, 
-#it can take a VERY long time to run these tests, as some sudoku boards 
-#will run the algorithm for upwards of 80 seconds. If this happens and you 
-#are very impatient, just run them again, or input a hardcoded board.
-# runTestsDisplay(5)
+#Test 1 - Hardcoded Practice Board
+# print("TEST 1 - Hardcoded Practice Board")
+# practiceBoard=[[3,0,6,5,0,8,4,0,0], 
+# 		[5,2,0,0,0,0,0,0,0], 
+# 		[0,8,7,0,0,0,0,3,1], 
+# 		[0,0,3,0,1,0,0,8,0], 
+# 		[9,0,0,8,6,3,0,0,5], 
+# 		[0,5,0,0,9,0,6,0,0], 
+# 		[1,3,0,0,0,0,2,5,0], 
+# 		[0,0,0,0,0,0,0,7,4], 
+# 		[0,0,5,2,0,6,3,0,0]]
 
-#Test 1 - Practice Board
-print("Test 1 - Hardcoded Practice Board")
-practiceBoard=[[3,0,6,5,0,8,4,0,0], 
-		[5,2,0,0,0,0,0,0,0], 
-		[0,8,7,0,0,0,0,3,1], 
-		[0,0,3,0,1,0,0,8,0], 
-		[9,0,0,8,6,3,0,0,5], 
-		[0,5,0,0,9,0,6,0,0], 
-		[1,3,0,0,0,0,2,5,0], 
-		[0,0,0,0,0,0,0,7,4], 
-		[0,0,5,2,0,6,3,0,0]]
+# sudokuTest = sudokuBoard(practiceBoard)
 
-sudokuTest = sudokuBoard(practiceBoard)
+# print("Initial Input Board:")
+# sudokuTest.displayBoard()
+# startTime = time.time()
+# a = backtracking_search(sudokuTest)
+# endTime = time.time()
+# runTime = endTime-startTime
+# if(sudokuTest.checkIfBoardOK()):
+# 	print("Solution for sudoku board:")
+# else:
+# 	print("There is no solution for this board.")
+# sudokuTest.displayBoard()
+# print("Runtime of backtracking algorithm:", runTime)
+# print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+# print("")
 
-print("Initial Input Board:")
-sudokuTest.displayBoard()
-startTime = time.time()
-a = backtracking_search(sudokuTest)
-endTime = time.time()
-runTime = endTime-startTime
-if(sudokuTest.checkIfBoardOK()):
-	print("Solution for sudoku board:")
-else:
-	print("There is no solution for this board.")
-sudokuTest.displayBoard()
-print("Runtime of backtracking algorithm:", runTime)
-print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
 
-#Test 2 - Hard Sudoku Board("Platinum Blonde")
-#This is a famously very hard Sudoku board that we have hardcoded for our algorithm
-#to solve. "This ultra-difficult puzzle (the lower puzzle in the above image) had a 
-#difficulty of 3.5789 on the Richter scale..."
-#https://www.cbsnews.com/news/mathematicians-create-richter-scale-of-sudoku-difficulty/
-print("Test 2 - Platinum Blonde Super Hard Board")
-platinumBlonde=[[8,0,0,0,0,0,0,0,0],
-		[0,0,3,6,0,0,0,0,0],
-		[0,7,0,0,9,0,2,0,0],
-		[0,5,0,0,0,7,0,0,0],
-		[0,0,0,0,4,5,7,0,0],
-		[0,0,0,1,0,0,0,3,0],
-		[0,0,1,0,0,0,0,6,8],
-		[0,0,8,5,0,0,0,1,0],
-		[0,9,0,0,0,0,4,0,0]]
+# # print("ANDRE BOARD")
+# # andreBoard=[[0,5,0,6,7,0,0,0,0],
+# # 		[6,0,0,0,4,0,1,0,0],
+# # 		[0,0,0,0,3,0,0,0,8],
+# # 		[1,0,3,0,0,7,0,0,0],
+# # 		[0,4,0,0,0,3,2,0,0],
+# # 		[0,0,0,0,0,0,7,3,0],
+# # 		[0,0,0,0,0,0,0,0,6],
+# # 		[0,0,5,8,0,0,4,0,0],
+# # 		[3,0,0,0,0,2,0,5,0]]
 
-sudokuTest = sudokuBoard(platinumBlonde)
+# # sudokuTest = sudokuBoard(andreBoard)
 
-print("Initial Input Board:")
-sudokuTest.displayBoard()
-startTime = time.time()
-a = backtracking_search(sudokuTest)
-endTime = time.time()
-runTime = endTime-startTime
-if(sudokuTest.checkIfBoardOK()):
-	print("Solution for sudoku board:")
-else:
-	print("There is no solution for this board.")
-sudokuTest.displayBoard()
-print("Runtime of backtracking algorithm:", runTime)
-print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+# # print("Initial Input Board:")
+# # sudokuTest.displayBoard()
+# # startTime = time.time()
+# # a = backtracking_search(sudokuTest)
+# # endTime = time.time()
+# # runTime = endTime-startTime
+# # if(sudokuTest.checkIfBoardOK()):
+# # 	print("Solution for sudoku board:")
+# # else:
+# # 	print("There is no solution for this board.")
+# # sudokuTest.displayBoard()
+# # print("Runtime of backtracking algorithm:", runTime)
+# # print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+# # print("")
 
-#Test 3 - Multiple Tests With Randomly Generated Boards
-#This function will run multiple tests with randomly generated boards. 
-#Fortunately, if the randomly generated board is too "hard", the algorithm
-#will keep running until it finds a solution, or fails. For this reason, 
-#it can take a VERY long time to run these tests, as some sudoku boards 
-#will run the algorithm for upwards of 80 seconds. If this happens and you 
-#are very impatient, just run them again, or input a hardcoded board.
-runTestsDisplay(5)
+
+# #Test 2 - 'Platinum Blonde' Hard Sudoku Board
+# #NOTE:Be patient! The backtracking algorithm can take up to 30 seconds to solve
+# #this Sudoku board.
+# #"This ultra-difficult puzzle (the lower puzzle in the above image) had a 
+# #difficulty of 3.5789 on the Richter scale..."
+# #https://www.cbsnews.com/news/mathematicians-create-richter-scale-of-sudoku-difficulty/
+# print("TEST 2 - 'Platinum Blonde' Hard Sudoku Board")
+# platinumBlonde=[[0,0,0,0,0,0,0,1,2],
+# 		[0,0,0,0,0,0,0,0,3],
+# 		[0,0,2,3,0,0,4,0,0],
+# 		[0,0,1,8,0,0,0,0,5],
+# 		[0,6,0,0,7,0,8,0,0],
+# 		[0,0,0,0,0,9,0,0,0],
+# 		[0,0,8,5,0,0,0,0,0],
+# 		[9,0,0,0,4,0,5,0,0],
+# 		[4,7,0,0,0,6,0,0,0]]
+
+# sudokuTest = sudokuBoard(platinumBlonde)
+
+# print("Initial Input Board:")
+# sudokuTest.displayBoard()
+# startTime = time.time()
+# a = backtracking_search(sudokuTest)
+# endTime = time.time()
+# runTime = endTime-startTime
+# if(sudokuTest.checkIfBoardOK()):
+# 	print("Solution for sudoku board:")
+# else:
+# 	print("There is no solution for this board.")
+# sudokuTest.displayBoard()
+# print("Runtime of backtracking algorithm:", runTime)
+# print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+# print("")
+
+# #Test 3 - 'Everest' Hard Sudoku Board
+# #"A Finnish Mathematician Claimed That This Is the Most Difficult Sudoku Puzzle in the World"
+# #This is a famously very hard Sudoku board that we have hardcoded for our algorithm
+# #to solve. 
+# #https://curiosity.com/topics/a-finnish-mathematician-claimed-that-this-is-the-most-difficult-sudoku-puzzle-in-the-world-curiosity/
+# print("TEST 3 - 'Everest' Hard Sudoku Board")
+# everest=[[8,0,0,0,0,0,0,0,0],
+# 		[0,0,3,6,0,0,0,0,0],
+# 		[0,7,0,0,9,0,2,0,0],
+# 		[0,5,0,0,0,7,0,0,0],
+# 		[0,0,0,0,4,5,7,0,0],
+# 		[0,0,0,1,0,0,0,3,0],
+# 		[0,0,1,0,0,0,0,6,8],
+# 		[0,0,8,5,0,0,0,1,0],
+# 		[0,9,0,0,0,0,4,0,0]]
+
+# sudokuTest = sudokuBoard(everest)
+
+# print("Initial Input Board:")
+# sudokuTest.displayBoard()
+# startTime = time.time()
+# a = backtracking_search(sudokuTest)
+# endTime = time.time()
+# runTime = endTime-startTime
+# if(sudokuTest.checkIfBoardOK()):
+# 	print("Solution for sudoku board:")
+# else:
+# 	print("There is no solution for this board.")
+# sudokuTest.displayBoard()
+# print("Runtime of backtracking algorithm:", runTime)
+# print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+# print("")
+
+# #Test 4 - Multiple Tests With Randomly Generated Boards
+# #This function will run multiple tests with randomly generated boards. 
+# #Fortunately, if the randomly generated board is too "hard", the algorithm
+# #will keep running until it finds a solution, or fails. For this reason, 
+# #it can take a VERY long time to run these tests, as some sudoku boards 
+# #will run the algorithm for upwards of 80 seconds. If this happens and you 
+# #are very impatient, just run them again, or input a hardcoded board.
+# print("TEST 4 - Multiple Tests With Randomly Generated Boards")
+runTests(10)
