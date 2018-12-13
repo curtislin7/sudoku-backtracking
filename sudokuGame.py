@@ -1,23 +1,23 @@
 from collections import OrderedDict
+import random
+import time
+
 
 class sudokuBoard:
 	def __init__(self):
-		#TODO: Add in our own randomized boards. 
+		#COMPLETED: Add in our own randomized boards. 
 		#TODO: Track the number backtracks with different "difficulties" of boards.
 		#TODO: Graph the number of backtracks per board difficulty over x number of trials.
-
-		# self.board = [[0 for x in range(9)] for y in range(9)]
-
-		#This is our hardcoded practice board. 
-		self.board=[[3,0,6,5,0,8,4,0,0], 
-		[5,2,0,0,0,0,0,0,0], 
-		[0,8,7,0,0,0,0,3,1], 
-		[0,0,3,0,1,0,0,8,0], 
-		[9,0,0,8,6,3,0,0,5], 
-		[0,5,0,0,9,0,6,0,0], 
-		[1,3,0,0,0,0,2,5,0], 
-		[0,0,0,0,0,0,0,7,4], 
-		[0,0,5,2,0,6,3,0,0]]
+		# This is our hardcoded practice board. 
+		# self.board=[[3,0,6,5,0,8,4,0,0], 
+		# [5,2,0,0,0,0,0,0,0], 
+		# [0,8,7,0,0,0,0,3,1], 
+		# [0,0,3,0,1,0,0,8,0], 
+		# [9,0,0,8,6,3,0,0,5], 
+		# [0,5,0,0,9,0,6,0,0], 
+		# [1,3,0,0,0,0,2,5,0], 
+		# [0,0,0,0,0,0,0,7,4], 
+		# [0,0,5,2,0,6,3,0,0]]
 
 		#Output for our hardcoded practice board.
 		# [[3, 1, 6, 5, 7, 8, 4, 9, 2], 
@@ -30,6 +30,26 @@ class sudokuBoard:
 		# [6, 9, 2, 3, 5, 1, 8, 7, 4], 
 		# [7, 4, 5, 2, 8, 6, 3, 1, 9]]
 
+		#This is platinum blonde sudoku board, considered the hardest sudoku puzzle IN THE WORLD.
+		# self.board=[[8,0,0,0,0,0,0,0,0],
+		# [0,0,3,6,0,0,0,0,0],
+		# [0,7,0,0,9,0,2,0,0],
+		# [0,5,0,0,0,7,0,0,0],
+		# [0,0,0,0,4,5,7,0,0],
+		# [0,0,0,1,0,0,0,3,0],
+		# [0,0,1,0,0,0,0,6,8],
+		# [0,0,8,5,0,0,0,1,0],
+		# [0,9,0,0,0,0,4,0,0]]
+		
+		#Generate a random board that has a minimum of 17 clues(any number less than this will
+		#not have a unique solution)
+		self.numberOfFilledPositions = 0
+		while(self.numberOfFilledPositions<17):
+			self.numberOfFilledPositions = 0
+			self.board = [[0 for x in range(9)] for y in range(9)]
+			self.generateRandomBoard()
+		self.initialBoard = self.board
+
 		#self.openPositions is a list that contains the positions of all the open
 		#spaces indicated by 0 on the board. 
 		self.openPositions = []
@@ -37,10 +57,20 @@ class sudokuBoard:
 			for column in range(9):
 				if(self.board[row][column] == 0):
 					self.openPositions.append((row,column))
-
 		#self.count to track the number of backtracks we have.
 		self.backtrackCount = 0
-	
+
+	def generateRandomBoard(self):
+		for row in range(9):
+			numberRandomInRow = random.randint(1,3)
+			randomIndices = random.sample(range(0, 9), numberRandomInRow)
+			self.numberOfFilledPositions += numberRandomInRow
+			for randomColumn in randomIndices:
+				numberPosition = (row, randomColumn)
+				while(self.board[row][randomColumn] == 0):
+					randomNumber = random.randint(1,9)
+					if(self.checkIfNumberOK(numberPosition, randomNumber)):
+						self.board[row][randomColumn] = randomNumber
 	#class function to check if adding a number to the board is ok, will return 
 	#True if number is ok, and will return flase if number is not ok. numberPosition
 	#is passed in as a tuple with the x position y position of the value, numberValue
@@ -89,6 +119,13 @@ class sudokuBoard:
 		#violating any of the other rules.
 		return True
 
+	def checkIfBoardOK(self):
+		for row in range(9):
+			for column in range(0):
+				if(self.board[row][column] == 0):
+					return False
+		return True
+
 	def displayBoard(self):
 		# print("enter")
 		for row in range(9):
@@ -101,18 +138,22 @@ class sudokuBoard:
 				print("\n---------------------")
 			else:
 				print("")
+		print("\n")
 
 def backtracking_search(sudokuBoard):
     output = OrderedDict()
-    return recursive_backtracking(output, sudokuBoard)
+    startTime = time.time()
+
+    return recursive_backtracking(output, sudokuBoard, startTime)
 
 
-def recursive_backtracking(assignment, sudokuBoard):
-    
+def recursive_backtracking(assignment, sudokuBoard, startTime):
+	
     #if all variables in sudokuBoard.openPositions have been assigned, end the recursion
     #and return.
     if(len(assignment) == len(sudokuBoard.openPositions)):
         return assignment
+    
     
     #find the next unassigned open position in the board and make it the next one the 
     #algorithm assigns.
@@ -134,7 +175,7 @@ def recursive_backtracking(assignment, sudokuBoard):
         if(checkNumber == True):
             assignment[current] = number
             sudokuBoard.board[current[0]][current[1]] = number
-            result = recursive_backtracking(assignment, sudokuBoard)
+            result = recursive_backtracking(assignment, sudokuBoard, startTime)
             if result != False: 
                 return assignment
             assignment.pop(current,None)
@@ -145,9 +186,56 @@ def recursive_backtracking(assignment, sudokuBoard):
     sudokuBoard.backtrackCount+=1
     return False 
 
+def runTestsDisplay(numberOfTests):
+	for i in range(numberOfTests):
+		print("New Sudoku Test:", i)
+		sudokuTest = sudokuBoard()
+		print("Number of clues given for randomly generated sudoku board:", sudokuTest.numberOfFilledPositions)
+		print("")
+		print("Randomly generated sudoku board:")
+		# sudokuTest.displayBoard()
+		startTime = time.time()
+		a = backtracking_search(sudokuTest)
+		endTime = time.time()
+		runTime = endTime-startTime
+		if(sudokuTest.checkIfBoardOK):
+			print("Solution for sudoku board:")
+		else:
+			print("There is no solution for this board.")
+		sudokuTest.displayBoard()
+		print("Runtime of backtracking algorithm:", runTime)
+		print("Number of backtracks for sudoku board:", sudokuTest.backtrackCount)
+
+def displayBoardInformation(boardResults):
+	print("Number of Clues Given     Sudoku Solved?     Algorithm Runtime:     Number of Backtracks:")
+	for board in boardResults:
+		for item in board:
+			print(item, end = " ")
+		print("")
+
+def runTests(numberOfTests):
+	boardResults = []
+	for i in range(numberOfTests):
+		boardInformation = []
+		sudokuTest = sudokuBoard()
+		boardInformation.append(sudokuTest.numberOfFilledPositions)
+		startTime = time.time()
+		a = backtracking_search(sudokuTest)
+		endTime = time.time()
+		runTime = endTime-startTime
+		if(sudokuTest.checkIfBoardOK):
+			boardInformation.append("Yes")
+		else:
+			boardInformation.append("No")
+		boardInformation.append(runTime)
+		boardInformation.append(sudokuTest.backtrackCount)
+		boardResults.append(boardInformation)
+	displayBoardInformation(boardResults)
+		
+runTests(5)
 # test = sudokuBoard()
 # a = backtracking_search(test)
 
-test = sudokuBoard()
-a = backtracking_search(test)
-test.displayBoard()
+
+# test.checkIfBoardOK()
+# print(test.board[1][1])
