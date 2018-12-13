@@ -3,21 +3,18 @@ import random
 import time
 
 class sudokuBoard:
-	def __init__(self, board = 0):
-		#COMPLETED: Add in our own randomized boards. 
-		#TODO: Track the number backtracks with different "difficulties" of boards.
-		#TODO: Graph the number of backtracks per board difficulty over x number of trials.
-		# This is our hardcoded practice board. 
-
+	def __init__(self, board = None):
 		#Generate a random board that has a minimum of 17 clues(any number less than this will
-		#not have a unique solution)
+		#not have a unique solution), according to math.
 		self.board = board
-		if(board == 0):
+		if(board == None):
 			self.numberOfFilledPositions = 0
 			while(self.numberOfFilledPositions<17):
 				self.numberOfFilledPositions = 0
 				self.board = [[0 for x in range(9)] for y in range(9)]
 				self.generateRandomBoard()
+			self.initialBoard = self.board
+		else:
 			self.initialBoard = self.board
 
 		#self.openPositions is a list that contains the positions of all the open
@@ -27,6 +24,7 @@ class sudokuBoard:
 			for column in range(9):
 				if(self.board[row][column] == 0):
 					self.openPositions.append((row,column))
+
 		#self.count to track the number of backtracks we have.
 		self.backtrackCount = 0
 
@@ -41,6 +39,7 @@ class sudokuBoard:
 					randomNumber = random.randint(1,9)
 					if(self.checkIfNumberOK(numberPosition, randomNumber)):
 						self.board[row][randomColumn] = randomNumber
+
 	#class function to check if adding a number to the board is ok, will return 
 	#True if number is ok, and will return flase if number is not ok. numberPosition
 	#is passed in as a tuple with the x position y position of the value, numberValue
@@ -89,6 +88,10 @@ class sudokuBoard:
 		#violating any of the other rules.
 		return True
 
+	#The main assumption for this function is if a board is returned with any 
+	#unfilled values(i.e. a number value of 0 in the returned board, it will 
+	#mean that our algorithm failed and no solution was
+	#found for the given Sudoku board.
 	def checkIfBoardOK(self):
 		for row in range(9):
 			for column in range(9):
@@ -96,6 +99,8 @@ class sudokuBoard:
 					return False
 		return True
 
+	#Function to iterate through our 2d array and print our values in a "pretty"
+	#fashion.
 	def displayBoard(self):
 		# print("enter")
 		for row in range(9):
@@ -111,13 +116,10 @@ class sudokuBoard:
 
 def backtracking_search(sudokuBoard):
     output = OrderedDict()
-    startTime = time.time()
-
-    return recursive_backtracking(output, sudokuBoard, startTime)
+    return recursive_backtracking(output, sudokuBoard)
 
 
-def recursive_backtracking(assignment, sudokuBoard, startTime):
-	
+def recursive_backtracking(assignment, sudokuBoard):
     #if all variables in sudokuBoard.openPositions have been assigned, end the recursion
     #and return.
     if(len(assignment) == len(sudokuBoard.openPositions)):
@@ -143,7 +145,7 @@ def recursive_backtracking(assignment, sudokuBoard, startTime):
         if(checkNumber == True):
             assignment[current] = number
             sudokuBoard.board[current[0]][current[1]] = number
-            result = recursive_backtracking(assignment, sudokuBoard, startTime)
+            result = recursive_backtracking(assignment, sudokuBoard)
             if result != False: 
                 return assignment
             assignment.pop(current,None)
