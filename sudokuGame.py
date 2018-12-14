@@ -299,8 +299,8 @@ print("")
 # #"A Finnish Mathematician Claimed That This Is the Most Difficult Sudoku Puzzle in the World"
 # #This is a famously very hard Sudoku board that we have hardcoded for our algorithm
 # #to solve. 
-# #https://curiosity.com/topics/a-finnish-mathematician-claimed-that-this-is-the-most-difficult-sudoku-puzzle-in-the-world-curiosity/
-# print("TEST 3 - 'Everest' Hard Sudoku Board")
+#https://curiosity.com/topics/a-finnish-mathematician-claimed-that-this-is-the-most-difficult-sudoku-puzzle-in-the-world-curiosity/
+print("TEST 3 - 'Everest' Hard Sudoku Board")
 everest=[[8,0,0,0,0,0,0,0,0],
 		[0,0,3,6,0,0,0,0,0],
 		[0,7,0,0,9,0,2,0,0],
