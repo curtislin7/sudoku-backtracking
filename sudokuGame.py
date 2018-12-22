@@ -2,20 +2,21 @@ from collections import OrderedDict
 import random
 import time
 
+MINIMUM_CLUES = 17
+SQUARE_SIZE = 9
+
 class sudokuBoard:
+
 	def __init__(self, board = None):
 		#Generate a random board that has a minimum of 17 clues(any number less than this will
 		#not have a unique solution), according to math.
 		self.board = board
-		if(board == None):
+		if(board is None):
 			self.numberOfFilledPositions = 0
-			while(self.numberOfFilledPositions<17):
+			while(self.numberOfFilledPositions< MINIMUM_CLUES):
 				self.numberOfFilledPositions = 0
 				self.board = [[0 for x in range(9)] for y in range(9)]
 				self.generateRandomBoard()
-			self.initialBoard = self.board
-		else:
-			self.initialBoard = self.board
 
 		#self.openPositions is a list that contains the positions of all the open
 		#spaces indicated by 0 on the board. 
@@ -24,7 +25,6 @@ class sudokuBoard:
 			for column in range(9):
 				if(self.board[row][column] == 0):
 					self.openPositions.append((row,column))
-
 		#self.count to track the number of backtracks we have.
 		self.backtrackCount = 0
 
@@ -44,46 +44,26 @@ class sudokuBoard:
 	#True if number is ok, and will return flase if number is not ok. numberPosition
 	#is passed in as a tuple with the x position y position of the value, numberValue
 	#is the value of the number itself.
-	def checkIfNumberOK(self, numberPosition, numberValue):
-		xPosition = numberPosition[0]
-		yPosition = numberPosition[1]
+	# def checkIfOk(self, cell):
+	# 	checkIfNumberOK(self, (cell.x, cell.y), cell.value)
 
+	def checkIfNumberOK(self, numberPosition, numberValue):
+		xPosition, yPosition = numberPosition
 		#check row by iterating through 0-8 with fixed y position
 		for rowCheckX in range(9):
 			if(self.board[rowCheckX][yPosition] == numberValue):
 				return False
-
 		#check column by iterating through 0-8 with fixed x position
 		for columnCheckY in range(9): 
 			if(self.board[xPosition][columnCheckY] == numberValue):
 				return False
-
-		#miniBoardCheck - check within the 3X3 "square" of the board to verify that
-		#the numberValue is not already within the 3X3 board.
-		miniBoardFirst = range(0,3)
-		miniBoardSecond = range(3,6)
-		miniBoardThird = range(6,9)
-		miniBoardPosition = [0,0]
-
-		if xPosition in miniBoardFirst:
-			miniBoardPosition[0] = miniBoardFirst
-		elif xPosition in miniBoardSecond:
-			miniBoardPosition[0] = miniBoardSecond
-		elif xPosition in miniBoardThird:
-			miniBoardPosition[0] = miniBoardThird
-
-		if yPosition in miniBoardFirst:
-			miniBoardPosition[1] = miniBoardFirst
-		elif yPosition in miniBoardSecond:
-			miniBoardPosition[1] = miniBoardSecond
-		elif yPosition in miniBoardThird:
-			miniBoardPosition[1] = miniBoardThird
-
-		for x in miniBoardPosition[0]:
-			for y in miniBoardPosition[1]:
-				if(self.board[x][y] == numberValue):
+		#check within appropriate square
+		for x in range(0,3):
+			for y in range(0,3):
+				miniBoardCheckX = int(xPosition/3)*3 + x
+				miniBoardCheckY = int(yPosition/3)*3 + y
+				if(self.board[miniBoardCheckX][miniBoardCheckY] == numberValue):
 					return False
-
 		#If all these conditions pass, then the number can be added safely without
 		#violating any of the other rules.
 		return True
